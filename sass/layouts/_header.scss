@@ -1,0 +1,37 @@
+header {
+    margin: 0 auto;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        .logo-container {
+            height: 65px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 10px;
+                a img {
+                    width: 160px;
+                }
+        }
+        .location-container {
+            width: 100%;
+            background-color: #EAEAEA;
+                box-shadow: inset 0px 2px 2px #CECFCE;
+            .location-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                font-size: 16px;
+                padding-right: 30px;
+                    p {
+                        font-weight: 500;
+                        padding-left: 10px;
+                    }
+            }
+        }
+}
