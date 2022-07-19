@@ -1,0 +1,53 @@
+.how-to {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    .how-to-title {
+        margin-bottom: 5px;
+    }
+    .how-to-list-container {
+        width: 100%;
+        .how-to-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 300px;
+            padding-left: 10px;
+            list-style: none;
+            counter-reset: li;
+            &-item::before {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 10px;
+                height: 10px;
+                content: counter(li);
+                background-color: #9356DC;
+                color: white;
+                padding: 8px;
+                border-radius: 100%;
+                margin-left: -35px;
+            }
+            &-item {
+                width: 270px;
+                padding: 22px 25px;
+                margin: 15px 0;
+                border-radius: 20px;
+                background-color: #F6F6F6;
+                box-shadow: 0px 3px 20px -10px grey;
+                counter-increment: li;
+                .fa-solid {
+                    margin-left: 15px;
+                    font-size: 20px;
+                    color: #636262;
+                    width: 20px;
+                }
+                span {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

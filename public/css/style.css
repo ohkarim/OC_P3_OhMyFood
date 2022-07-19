@@ -242,6 +242,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 24px;
+}
+
 .hero-header .hero-container {
   background-color: #F6F6F6;
   display: flex;
@@ -253,7 +257,6 @@ body {
   margin-top: 0;
   width: 70%;
   padding-top: 40px;
-  font-size: 24px;
 }
 .hero-header .hero-container .hero-description {
   color: grey;
@@ -271,6 +274,60 @@ body {
   box-shadow: 0px 8px 20px -3px grey;
   padding: 15px 20px;
   margin-bottom: 60px;
+}
+
+.how-to {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.how-to .how-to-title {
+  margin-bottom: 5px;
+}
+.how-to .how-to-list-container {
+  width: 100%;
+}
+.how-to .how-to-list-container .how-to-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  padding-left: 10px;
+  list-style: none;
+  counter-reset: li;
+}
+.how-to .how-to-list-container .how-to-list-item::before {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  content: counter(li);
+  background-color: #9356DC;
+  color: white;
+  padding: 8px;
+  border-radius: 100%;
+  margin-left: -35px;
+}
+.how-to .how-to-list-container .how-to-list-item {
+  width: 270px;
+  padding: 22px 25px;
+  margin: 15px 0;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 3px 20px -10px grey;
+  counter-increment: li;
+}
+.how-to .how-to-list-container .how-to-list-item .fa-solid {
+  margin-left: 15px;
+  font-size: 20px;
+  color: #636262;
+  width: 20px;
+}
+.how-to .how-to-list-container .how-to-list-item span {
+  margin-left: 20px;
 }
 
 header {
