@@ -1,9 +1,4 @@
-@import "vendors/_normalize.scss";
-
-@import "base/_base.scss";
-@import "base/_typography.scss";
-
-@import "components/_hero-header.scss";
-@import "components/_how-to.scss";
-
-@import "layouts/_header.scss";
+@import "vendors/_index.scss";
+@import "base/_index.scss";
+@import "components/_index.scss";
+@import "layouts/_index.scss";
