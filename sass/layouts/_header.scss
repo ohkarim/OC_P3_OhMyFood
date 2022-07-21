@@ -6,6 +6,7 @@ header {
     align-items: center;
     justify-content: center;
         .logo-container {
+            font-family: 'Shrikhand', sans-serif;
             height: 65px;
             width: 100%;
             display: flex;
@@ -13,9 +14,7 @@ header {
             align-items: center;
             margin: 0 auto;
             margin-top: 10px;
-                a img {
-                    width: 160px;
-                }
+            font-size: 30px;
         }
         .location-container {
             width: 100%;
