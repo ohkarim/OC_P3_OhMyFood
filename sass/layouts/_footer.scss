@@ -6,7 +6,9 @@ footer {
         font-family: 'Shrikhand', sans-serif;
         font-size: 18px;
         margin: 0 auto;
-        text-align: center;
+        @media (min-width: 992px) {
+            text-align: center; 
+        }
     }
     .footer-links-container {
         padding-left: 0;
