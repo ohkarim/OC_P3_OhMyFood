@@ -2,3 +2,17 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+.how-to-wrapper, .restaurants-results-wrapper, .footer-container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .how-to-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

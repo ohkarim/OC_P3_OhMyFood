@@ -238,6 +238,19 @@ input[type=checkbox], input[type=radio] {
   scroll-behavior: smooth;
 }
 
+.how-to-wrapper, .restaurants-results-wrapper, .footer-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .how-to-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -292,7 +305,14 @@ a {
 .how-to .how-to-list-container {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .how-to .how-to-list-container {
+    display: flex;
+    justify-content: center;
+  }
+}
 .how-to .how-to-list-container .how-to-list {
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -301,6 +321,11 @@ a {
   padding-left: 10px;
   list-style: none;
   counter-reset: li;
+}
+@media (min-width: 768px) {
+  .how-to .how-to-list-container .how-to-list {
+    min-width: 500px;
+  }
 }
 .how-to .how-to-list-container .how-to-list-item::before {
   display: inline-flex;
