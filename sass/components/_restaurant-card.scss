@@ -33,11 +33,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 75px;
         .restaurant-card-description {
             padding: 0px 15px;
+            min-width: 150px;
             h2 {
                 font-size: 18px;
                 margin-bottom: 5px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
             p {
                 margin-top: 0;
@@ -45,7 +50,7 @@
             }
         }
         .restaurant-heart-container {
-            padding: 0px 25px 20px 25px;
+            padding: 0px 25px 20px 5px;
             i {
                 font-size: 26px;
             }
