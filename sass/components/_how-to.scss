@@ -25,6 +25,12 @@
             @media (min-width: 768px) {
                 min-width: 500px;
             }
+            @media (min-width: 1200px) {
+                min-width: 1000px;
+                flex-direction: row;
+                height: 150px;
+                gap: 40px;
+            }
             &-item::before {
                 display: inline-flex;
                 align-items: center;
