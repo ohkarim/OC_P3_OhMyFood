@@ -334,6 +334,61 @@ a {
   margin-left: 20px;
 }
 
+.restaurant-card {
+  position: relative;
+  width: 100%; /* or 340px mobile */
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0px 3px 20px -10px grey;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+}
+.restaurant-card .new-label {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008767;
+  font-size: 14px;
+  padding: 7px 12px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 50px 5px;
+  top: 5%;
+  right: 5%;
+}
+.restaurant-card .off {
+  display: none;
+}
+.restaurant-card img {
+  height: 180px;
+  object-position: 50% 65%;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant-card .restaurant-card-description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant-card .restaurant-card-description-container .restaurant-card-description {
+  padding: 0px 15px;
+}
+.restaurant-card .restaurant-card-description-container .restaurant-card-description h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.restaurant-card .restaurant-card-description-container .restaurant-card-description p {
+  margin-top: 0;
+  font-weight: 300;
+}
+.restaurant-card .restaurant-card-description-container .restaurant-heart-container {
+  padding: 0px 25px 20px 25px;
+}
+.restaurant-card .restaurant-card-description-container .restaurant-heart-container i {
+  font-size: 26px;
+}
+
 header {
   margin: 0 auto;
   height: 110px;
@@ -369,6 +424,24 @@ header .location-container .location-content {
 header .location-container .location-content p {
   font-weight: 500;
   padding-left: 10px;
+}
+
+.restaurants-results {
+  background-color: #F6F6F6;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants-results .restaurants-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .restaurants-results .restaurants-results-container {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
