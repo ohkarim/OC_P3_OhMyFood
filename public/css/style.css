@@ -519,4 +519,114 @@ footer .footer-links-container .footer-link-element i {
   width: 20px;
 }
 
+.restaurant-header {
+  height: 65px;
+  flex-direction: row;
+  position: relative;
+}
+.restaurant-header .fa-solid {
+  position: absolute;
+  font-size: 20px;
+  left: 6%;
+  top: 25px;
+}
+
+.menu-img-cover {
+  height: 265px;
+  width: 100%;
+}
+.menu-img-cover img {
+  height: 265px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-container {
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 30px 12px 80px 15px;
+  margin-top: -45px;
+  z-index: 1;
+  border-radius: 40px 40px 0 0;
+}
+.menu-container .menu-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px 0px 7px;
+}
+.menu-container .menu-title-container .menu-title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+}
+.menu-container .menu-title-container .restaurant-heart-container {
+  font-size: 26px;
+}
+.menu-container .menu-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.menu-container .menu-content-dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.menu-container .menu-content-dishes:nth-child(2) {
+  margin-bottom: 40px;
+}
+.menu-container .menu-content-dishes-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 6px;
+}
+.menu-container .menu-content-dishes-title::after {
+  position: absolute;
+  width: 40px;
+  content: "";
+  border-bottom: 3px solid #99E2D0;
+  left: 6px;
+  top: 25px;
+}
+.menu-container .menu-content-dishes-item {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 20px 0 15px;
+  box-shadow: 0px 3px 20px -10px grey;
+}
+.menu-container .menu-content-dishes-item-text {
+  height: 70px;
+  padding: 10px 0px;
+  margin-left: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu-container .menu-content-dishes-item-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu-container .menu-content-dishes-item-text p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+.menu-container .menu-content-dishes-item-price {
+  margin-top: 28px;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=style.css.map */
