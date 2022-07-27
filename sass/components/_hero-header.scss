@@ -26,6 +26,10 @@
         box-shadow: 0px 8px 20px -3px grey;
         padding: 15px 20px;
         margin-bottom: 60px;
+        &:hover {
+            background: linear-gradient(0deg, lighten($color: rgb(147,86,220,1), $amount: 5%) 0%, lighten($color: rgb(255,121,218,1), $amount: 5%) 95%);
+            box-shadow: 0px 8px 25px -3px grey;
+        }
     }
    }
 }
