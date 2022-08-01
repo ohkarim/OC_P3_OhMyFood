@@ -600,8 +600,37 @@ footer .footer-container .footer-links-container .footer-link-element i {
   font-size: 28px;
   margin: 0;
 }
-.menu-container .menu-title-container .restaurant-heart-container {
+.menu-container .menu-title-container .restaurant-heart-container i {
   font-size: 26px;
+  position: relative;
+  z-index: 1;
+}
+.menu-container .menu-title-container .restaurant-heart-container i::before {
+  content: "\f004";
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 500ms 50ms;
+}
+.menu-container .menu-title-container .restaurant-heart-container i::after {
+  content: "\f004";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 95%);
+  opacity: 0;
+  transition: opacity 500ms 50ms;
+  z-index: 2;
+}
+.menu-container .menu-title-container .restaurant-heart-container i:hover::after {
+  opacity: 1;
+}
+.menu-container .menu-title-container .restaurant-heart-container i:hover::before {
+  opacity: 0;
 }
 .menu-container .menu-content {
   display: flex;
