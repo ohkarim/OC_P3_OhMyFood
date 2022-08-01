@@ -637,9 +637,18 @@ footer .footer-container .footer-links-container .footer-link-element i {
   flex-direction: column;
   margin-top: 15px;
 }
+@media (min-width: 1200px) {
+  .menu-container .menu-content {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+}
 .menu-container .menu-content-dishes {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 15px;
   margin-bottom: 20px;
 }
