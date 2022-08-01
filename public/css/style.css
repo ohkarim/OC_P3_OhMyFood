@@ -661,39 +661,85 @@ footer .footer-container .footer-links-container .footer-link-element i {
   left: 6px;
   top: 25px;
 }
-.menu-container .menu-content-dishes-item {
+.menu-container .menu-content-dishes-container {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 3px 20px -10px grey;
+  cursor: pointer;
+}
+.menu-container .menu-content-dishes-container-item {
   width: 100%;
   height: 65px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  border-radius: 15px;
-  padding: 0 20px 0 15px;
-  box-shadow: 0px 3px 20px -10px grey;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu-container .menu-content-dishes-item-text {
+.menu-container .menu-content-dishes-container-item-text {
   height: 70px;
   padding: 10px 0px;
-  margin-left: -5px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu-container .menu-content-dishes-item-text h3 {
+.menu-container .menu-content-dishes-container-item-text h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-container .menu-content-dishes-item-text p {
+.menu-container .menu-content-dishes-container-item-text p {
   margin: 0;
   font-size: 14px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-container .menu-content-dishes-item-price {
+.menu-container .menu-content-dishes-container-item-price {
   margin-top: 28px;
   font-weight: 500;
+  margin-right: 20px;
+}
+.menu-container .menu-content-dishes-container-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 0%;
+  border-radius: 0 15px 15px 0;
+  opacity: 0;
+  transition: all 800ms 100ms;
+}
+.menu-container .menu-content-dishes-container-check i {
+  font-size: 26px;
+  color: white;
+  opacity: 0;
+  transition: opacity 800ms ease-in;
+}
+.menu-container .menu-content-dishes-container-check i::before {
+  content: "\f058";
+}
+.menu-container .menu-content-dishes-container:hover .menu-content-dishes-container-check {
+  opacity: 1;
+  width: 20%;
+}
+.menu-container .menu-content-dishes-container:hover .menu-content-dishes-container-check i {
+  opacity: 1;
+  animation: rotation 700ms 1 linear;
 }
 .menu-container .menu-order-button {
   text-decoration: none;
@@ -706,6 +752,15 @@ footer .footer-container .footer-links-container .footer-link-element i {
   width: 190px;
   text-align: center;
   margin: 30px auto;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
