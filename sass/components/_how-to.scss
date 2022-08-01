@@ -10,7 +10,6 @@
         @media (min-width: 768px) {
             display: flex;
             justify-content: center;
-            
         }
         .how-to-list {
             max-width: 400px;
@@ -46,6 +45,12 @@
                 margin-left: -35px;
             }
             &-item {
+                $items-number: 4;
+                @for $i from 1 through $items-number {
+                    &:nth-child(#{$i}) {
+                    animation-delay: 1500ms * $i;
+                    }
+                }
                 width: 100%;
                 padding: 22px 25px;
                 margin: 15px 0;
@@ -54,6 +59,15 @@
                 box-shadow: 0px 3px 20px -10px grey;
                 counter-increment: li;
                 cursor: pointer;
+                transition: all 500ms;
+                animation: btn-color 3000ms 1 linear;
+                &:hover {
+                    background-color: #F4EDFE;
+                    box-shadow: 0px 8px 25px -3px grey;
+                    .fa-solid {
+                        color: #8B59D5;
+                    }
+                }
                 .fa-solid {
                     margin-left: 15px;
                     font-size: 20px;
@@ -65,5 +79,22 @@
                 }
             }
         }
+    }
+}
+
+@keyframes btn-color {
+    0% {
+        background-color: #F6F6F6;
+    }
+    10% {
+        background-color: #F4EDFE;
+        box-shadow: 0px 8px 25px -3px grey;
+    }
+    30%{
+        background-color: #F6F6F6;
+        box-shadow: 0px 3px 20px -10px grey;
+    }
+    100% {
+        background-color: #F6F6F6;
     }
 }

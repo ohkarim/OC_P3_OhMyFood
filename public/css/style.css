@@ -362,6 +362,27 @@ a {
   box-shadow: 0px 3px 20px -10px grey;
   counter-increment: li;
   cursor: pointer;
+  transition: all 500ms;
+  animation: btn-color 3000ms 1 linear;
+}
+.how-to .how-to-list-container .how-to-list-item:nth-child(1) {
+  animation-delay: 1500ms;
+}
+.how-to .how-to-list-container .how-to-list-item:nth-child(2) {
+  animation-delay: 3000ms;
+}
+.how-to .how-to-list-container .how-to-list-item:nth-child(3) {
+  animation-delay: 4500ms;
+}
+.how-to .how-to-list-container .how-to-list-item:nth-child(4) {
+  animation-delay: 6000ms;
+}
+.how-to .how-to-list-container .how-to-list-item:hover {
+  background-color: #F4EDFE;
+  box-shadow: 0px 8px 25px -3px grey;
+}
+.how-to .how-to-list-container .how-to-list-item:hover .fa-solid {
+  color: #8B59D5;
 }
 .how-to .how-to-list-container .how-to-list-item .fa-solid {
   margin-left: 15px;
@@ -373,6 +394,22 @@ a {
   margin-left: 20px;
 }
 
+@keyframes btn-color {
+  0% {
+    background-color: #F6F6F6;
+  }
+  10% {
+    background-color: #F4EDFE;
+    box-shadow: 0px 8px 25px -3px grey;
+  }
+  30% {
+    background-color: #F6F6F6;
+    box-shadow: 0px 3px 20px -10px grey;
+  }
+  100% {
+    background-color: #F6F6F6;
+  }
+}
 .restaurant-card {
   position: relative;
   width: 100%; /* or 340px mobile */
