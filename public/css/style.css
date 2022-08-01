@@ -673,6 +673,19 @@ footer .footer-container .footer-links-container .footer-link-element i {
   border-radius: 15px;
   box-shadow: 0px 3px 20px -10px grey;
   cursor: pointer;
+  animation: menu-appear 800ms 1 linear both;
+}
+.menu-container .menu-content-dishes-container:nth-child(1) {
+  animation-delay: 300ms;
+}
+.menu-container .menu-content-dishes-container:nth-child(2) {
+  animation-delay: 600ms;
+}
+.menu-container .menu-content-dishes-container:nth-child(3) {
+  animation-delay: 900ms;
+}
+.menu-container .menu-content-dishes-container:nth-child(4) {
+  animation-delay: 1200ms;
 }
 .menu-container .menu-content-dishes-container-item {
   width: 100%;
@@ -728,7 +741,7 @@ footer .footer-container .footer-links-container .footer-link-element i {
   font-size: 26px;
   color: white;
   opacity: 0;
-  transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease;
 }
 .menu-container .menu-content-dishes-container-check i::before {
   content: "\f058";
@@ -760,6 +773,20 @@ footer .footer-container .footer-links-container .footer-link-element i {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
