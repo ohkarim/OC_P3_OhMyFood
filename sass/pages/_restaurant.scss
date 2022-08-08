@@ -111,9 +111,9 @@
                 }
             }
             &-container {
-                $items-number: 4;
+                $items-number: 3;
                 @for $i from 1 through $items-number {
-                    &:nth-child(#{$i}) {
+                    &:nth-of-type(#{$i}) {
                         animation-delay: 300ms * $i;
                     }
                 }

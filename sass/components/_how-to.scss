@@ -45,10 +45,10 @@
                 margin-left: -35px;
             }
             &-item {
-                $items-number: 4;
+                $items-number: 3;
                 @for $i from 1 through $items-number {
-                    &:nth-child(#{$i}) {
-                    animation-delay: 1500ms * $i;
+                    &:nth-of-type(#{$i}) {
+                    animation-delay: 2000ms * $i;
                     }
                 }
                 width: 100%;
