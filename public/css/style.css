@@ -687,11 +687,14 @@ footer .footer-container .footer-links-container .footer-link-element i {
   background-color: #F6F6F6;
   padding: 30px 12px 80px 15px;
   margin-top: -45px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
   border-radius: 40px 40px 0 0;
   display: flex;
   flex-direction: column;
   min-height: 67vh;
+  max-width: 1440px;
 }
 .menu-container .menu-title-container {
   width: 100%;
