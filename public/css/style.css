@@ -624,6 +624,7 @@ header .location-container .location-content p {
 
 footer {
   background-color: #363636;
+  min-height: 12vh;
 }
 footer .footer-container {
   color: white;
@@ -690,6 +691,7 @@ footer .footer-container .footer-links-container .footer-link-element i {
   border-radius: 40px 40px 0 0;
   display: flex;
   flex-direction: column;
+  min-height: 67vh;
 }
 .menu-container .menu-title-container {
   width: 100%;
